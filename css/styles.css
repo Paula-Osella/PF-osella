@@ -20,7 +20,18 @@ img {
     max-width: 100%;
 }
 
+.boton_nav{
+    background-color: black;
+    color: white;
+    border: none;
+}
 
+.boton_nav:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+
+}
 /* portada del index */
 .foto__portada {
 
@@ -90,7 +101,7 @@ img {
 
 }
 
-.boton__shop:hover{
+.boton__shop:hover {
     background-color: aliceblue;
     color: black;
     border: solid black 1px;
@@ -237,33 +248,34 @@ img {
 
 
 @media (min-width: 1221px) and (max-width: 1608px) {
-.articulo__presentacion  img{
-    width: 40vw;
-}
-.presentacion__texto{
-    border: none;
-    font-size: 1rem;
-    width: 40vw;
+    .articulo__presentacion img {
+        width: 40vw;
+    }
+
+    .presentacion__texto {
+        border: none;
+        font-size: 1rem;
+        width: 40vw;
 
 
-}
+    }
 
     .articulo__presentacion {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-}  
+    }
 
-.titulo__productos__destacados{
-    font-size: 1.5rem;
+    .titulo__productos__destacados {
+        font-size: 1.5rem;
 
-    margin-top: 20px;
-}
+        margin-top: 20px;
+    }
 
-.carrusel__index {
-    width: 60vw;
+    .carrusel__index {
+        width: 60vw;
 
-}
+    }
 
 }
 
@@ -339,6 +351,39 @@ img {
 
 }
 
+.formulario__novedades {
+    background: linear-gradient(rgba(56, 153, 238, 0.371), beige);
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 0.8rem;
+}
+
+.titulo__novedades {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.subscripcion__productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+
+}
+
+.btn_btn_subscripcion {
+    border-radius: 1px solid black;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+    padding: 0.2rem;
+}
+
+.btn_btn_subscripcion:hover {
+    background-color: aliceblue;
+    color: black;
+}
 
 
 @media (min-width: 400px) and (max-width:499px) {
@@ -399,6 +444,8 @@ img {
 
     .titulo__productos {
         font-size: 0.8rem;
+
+
     }
 
 
@@ -411,12 +458,47 @@ img {
 
 
     }
+
+
+
+    .formulario__novedades{
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    .titulo__novedades {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+
+
+    .btn_btn_subscripcion {
+        border-radius: 1px solid black;
+        background-color: black;
+        color: white;
+        gap: 1rem;
+        padding: 0.2rem;
+    }
+
+    .btn_btn_subscripcion:hover {
+        background-color: aliceblue;
+        color: black;
+    }
+
+
 }
 
 @media (min-width: 601px) and (max-width:900px) {
     .foto__portada img {
         width: 40vw;
     }
+
     .seccion__capsulas img {
         width: 35vw;
 
@@ -431,30 +513,66 @@ img {
 
     }
 
-    .seccion__capsulas{
+    .seccion__capsulas {
         display: grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
     }
-    
-.seccion__capsulas :nth-child(3){
-    grid-column: span 2;
- 
-}
-.seccion__productos img{
-width: 25vw;
-}
-.seccion__productos{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
 
-.seccion__productos :nth-child(10){
-    grid-column: span 3;
-}
-.titulo__productos h3{
-    font-size: 0.8rem;
-}
+    .seccion__capsulas :nth-child(3) {
+        grid-column: span 2;
+
+    }
+
+    .seccion__productos img {
+        width: 25vw;
+    }
+
+    .seccion__productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .seccion__productos :nth-child(10) {
+        grid-column: span 3;
+    }
+
+    .titulo__productos h3 {
+        font-size: 0.8rem;
+    }
+
+
+
+    .formulario__novedades{
+        background-color: aliceblue;
+        padding: 0.8rem;
+        width: 70vw;
+margin: auto;
+margin-bottom: 10px;
+    }
+
+
+
+    .titulo__novedades {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+
+
+    .btn_btn_subscripcion {
+        border-radius: 1px solid black;
+        background-color: black;
+        color: white;
+        gap: 1rem;
+        padding: 0.2rem;
+    }
+
+    .btn_btn_subscripcion:hover {
+        background-color: aliceblue;
+        color: black;
+    }
 
 }
 
@@ -477,31 +595,71 @@ width: 25vw;
 
     }
 
-    .seccion__capsulas{
+    .seccion__capsulas {
         display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
     }
-    
 
-.seccion__productos img{
-width: 15vw;
-}
-.seccion__productos{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+
+    .seccion__productos img {
+        width: 15vw;
+    }
+
+    .seccion__productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .seccion__productos :nth-child(10) {
+        grid-column: span 1;
+    }
+
+    .titulo__productos {
+        font-size: 1rem;
+    }
+
+
+    /* FORMULARIO DE NOVEDADES  */
+    .formulario__novedades{
+        background-color: aliceblue;
+
+width: 50vw;
+background-repeat: repeat;
+margin: auto;
+margin-bottom: 10px;
+        border:none;
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    .titulo__novedades {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+
+
+    .btn_btn_subscripcion {
+        border-radius: 1px solid black;
+        background-color: black;
+        color: white;
+        gap: 1rem;
+        padding: 0.2rem;
+    }
+
+    .btn_btn_subscripcion:hover {
+        background-color: aliceblue;
+        color: black;
+    }
 }
 
-.seccion__productos :nth-child(10){
-    grid-column: span 1;
-}
-.titulo__productos{
-    font-size: 1rem;
-}
-
-}
-
-@media (min-width: 1225px) and (max-width:1600px) { 
+@media (min-width: 1225px) and (max-width:1600px) {
     .foto__portada img {
         width: 25vw;
     }
@@ -520,39 +678,79 @@ width: 15vw;
 
     }
 
-    .seccion__capsulas{
+    .seccion__capsulas {
         display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: 2fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
     }
+
+
+    .seccion__productos img {
+        width: 12vw;
+    }
+
+    .seccion__productos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .seccion__productos :nth-child(10) {
+        grid-column: span 1;
+    }
+
+    .titulo__productos {
+        font-size: 0.8rem;
+    }
+
+        /* FORMULARIO DE NOVEDADES  */
+        .formulario__novedades{
+            background-color: aliceblue;
     
-
-.seccion__productos img{
-width: 12vw;
-}
-.seccion__productos{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
-
-.seccion__productos :nth-child(10){
-    grid-column: span 1;
-}
-.titulo__productos{
-    font-size: 0.8rem;
-}
+    width: 50vw;
+    background-repeat: repeat;
+    margin: auto;
+    margin-bottom: 10px;
+            border:none;
+            padding: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+    
+    
+        .titulo__novedades {
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    
+    
+    
+        .btn_btn_subscripcion {
+            border-radius: 1px solid black;
+            background-color: black;
+            color: white;
+            gap: 1rem;
+            padding: 0.2rem;
+        }
+    
+        .btn_btn_subscripcion:hover {
+            background-color: aliceblue;
+            color: black;
+        }
 
 }
 
 
 /* PAGINA DE PREGUNTAS FRECUENTES */
 
-.foto__collage__preguntas__frecuentes{
+.foto__collage__preguntas__frecuentes {
     width: 50vw;
     margin: auto;
 }
 
-.seccion__preguntas__frecuentes{
+.seccion__preguntas__frecuentes {
     background-color: aliceblue;
     padding: 1rem;
     width: 50vw;
@@ -561,30 +759,30 @@ width: 12vw;
     margin-bottom: 10px;
 }
 
-.seccion__preguntas__frecuentes h1{
-text-align: center;
-font-size: 1.8rem;
+.seccion__preguntas__frecuentes h1 {
+    text-align: center;
+    font-size: 1.8rem;
 }
 
-.seccion__preguntas__frecuentes h2{
+.seccion__preguntas__frecuentes h2 {
     font-size: 1.5rem;
 }
 
 /*PAGINA- QUIENES- SOMOS */
-.seccion__sobre__nosotros{
+.seccion__sobre__nosotros {
     background-color: aliceblue;
     width: 50vw;
-    margin:auto;
+    margin: auto;
     margin-bottom: 10px;
 
 }
 
-.seccion__sobre__nosotros h1{
+.seccion__sobre__nosotros h1 {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.collage__nosotros{
+.collage__nosotros {
     width: 40vw;
     margin: auto;
     margin-top: 10px;
@@ -594,13 +792,13 @@ font-size: 1.8rem;
 /* PAGINA DE CONTACTO */
 
 
-.mapa__contacto iframe{
+.mapa__contacto iframe {
     width: 60%;
 
 
 }
 
-.mapa__contacto{
+.mapa__contacto {
     border-top: solid black 1px;
     display: flex;
     flex-direction: column;
@@ -609,50 +807,47 @@ font-size: 1.8rem;
 
 /* PAGINA DE CONTACTO */
 
-.container__contacto{
+.container__contacto {
 
     width: 30%;
     margin: auto;
 
 }
 
-.titulo__form{
+.titulo__form {
     font-size: 1.8rem;
     text-align: center;
 }
 
 
-.contenedor__botones input{
+.contenedor__botones input {
     color: white;
     margin-bottom: 1rem;
 }
 
-.contenedor__input{
+.contenedor__input {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .caja__texto,
-.contenedor__botones{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 1rem;
+.contenedor__botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
 }
 
-.contenedor-input{
+.contenedor-input {
     text-align: center;
 
 }
 
-.contenedor__botones{
+.contenedor__botones {
 
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-align-content: center;
+    align-content: center;
 }
-
-
-
