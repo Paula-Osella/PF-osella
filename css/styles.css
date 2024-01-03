@@ -259,6 +259,7 @@ img {
 
     margin-top: 20px;
 }
+
 .carrusel__index {
     width: 60vw;
 
@@ -303,7 +304,7 @@ img {
     font-size: 0.8rem;
     padding: 1rem;
     margin: 0.5rem;
-    border-top: solid black 1px;
+
 
 }
 
@@ -484,18 +485,18 @@ width: 25vw;
     
 
 .seccion__productos img{
-width: 20vw;
+width: 15vw;
 }
 .seccion__productos{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
 }
 
 .seccion__productos :nth-child(10){
-    grid-column: span 3;
+    grid-column: span 1;
 }
-.titulo__productos h3{
-    font-size: 0.8rem;
+.titulo__productos{
+    font-size: 1rem;
 }
 
 }
@@ -527,17 +528,17 @@ width: 20vw;
     
 
 .seccion__productos img{
-width: 20vw;
+width: 12vw;
 }
 .seccion__productos{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
 }
 
 .seccion__productos :nth-child(10){
-    grid-column: span 3;
+    grid-column: span 1;
 }
-.titulo__productos h3{
+.titulo__productos{
     font-size: 0.8rem;
 }
 
