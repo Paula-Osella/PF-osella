@@ -1,0 +1,78 @@
+
+/* boton nav */
+.boton_nav{
+    background: $cuarto-color;
+    color: white;
+    border: none;
+
+    &:hover{
+        background:$quinto-color;
+    color: black;
+    border: 1px solid black;
+
+    }
+}
+
+/* BOTON PRODUCTOS DESTACADO PAGINA INDEX */
+.boton__shop {
+    background: $cuarto-color;
+    border: black 1px solid;
+    color: white;
+    margin: auto;
+    width: 10rem;
+    margin: 1rem;
+    font-family: $tipografia-text;
+
+    &:hover{
+        background: $quinto-color;
+    color: black;
+    color: black;
+    border: solid black 1px;
+
+    }
+}
+/* BOTON FORMULARIO PRODUCTOS */
+
+.formulario__boton {
+    border-radius:10px 10px 10px 10px;
+    background: $cuarto-color;
+    color: white;
+    gap: 1rem;
+    padding: 0.2rem;
+
+    &:hover{
+        background: $quinto-color;
+        color: black;
+    }
+}
+
+
+/*  CONTACTO*/
+.form__botones{
+    
+    background: $cuarto-color;
+    border: black 1px solid;
+    color: white;
+    margin: auto;
+    width: 10rem;
+    margin: 1rem;
+    font-family: $tipografia-text;
+border-radius: 10px 10px 10px 10px;
+}
+
+.form__checkbox{
+    width: 100px;
+    margin: auto;
+}
+
+.form__selector{
+    border-radius: 10px 10px 10px 10px;
+    width: 150px;
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+    font-family: $tipografia-text;
+
+}

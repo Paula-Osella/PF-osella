@@ -1,0 +1,36 @@
+.nosotros__titulo{
+    @include titulo-principal
+}
+
+.nosotros{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+    &__articulo{
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    }
+    &__foto{
+        width: 55vw;
+    border-radius: 10px 10px 10px 10px;
+}
+&__texto{
+        background: $secondary-color;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 1rem;
+        padding: 0.8rem;
+        margin: 0.5rem;
+        font-family: $tipografia-text;
+    text-align: center;
+    
+}
+
+}

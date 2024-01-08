@@ -1,0 +1,54 @@
+/*# PREGUNTAS FRECUENTES*/
+
+.preguntas__frecuentes-titulo{
+    @include titulo-principal
+}
+
+.preguntas{
+    
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+    &__frecuentes{
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem
+    }
+    
+    &__foto{
+        width: 55vw;
+    border-radius: 10px 10px 10px 10px;
+
+    }
+    &__texto{
+        background: $secondary-color;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 0.8rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        font-family: $tipografia-text;
+    }
+    &__titulo{
+        font-family: $tipografia-text;
+        font-size: 1rem;
+    }
+
+    &__tarjetas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 12vw;
+        height: 12vh;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    padding: 0.5rem;
+    }
+    
+}
+

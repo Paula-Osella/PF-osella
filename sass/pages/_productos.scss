@@ -1,0 +1,91 @@
+.productos__titulo-principal{
+    @include titulo-principal
+}
+
+
+.capsulas{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    &__texto{
+        font-size: 1rem;
+        text-align: center;
+        font-family: $terceary-color;
+        background: $secondary-color;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 0.8rem;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+img{
+    width: 55vw;
+}
+}
+
+/* FORMULARIO DE NOVEDADES */
+
+
+.formulario {
+    background: $secondary-color;
+    border-radius: 10px 10px 10px;
+    padding: 0.8rem;
+
+    &__titulo{
+        font-size: 1rem;
+        font-family: $tipografia-text;
+        text-align: center;
+    }
+    &__subscripcion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    
+    }
+}
+
+/* GALERIA DE PRODCUTOS */
+
+.productos{
+    border-top: solid black 1px;
+    margin-top: 10px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+    
+    }
+    img{
+        width: 45vw;
+    }
+
+    &__titulo{
+        text-align: center;
+        font-size: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    background: $terceary-color;
+        color: white;
+        padding: 0.5rem;
+        align-items: center;
+        margin: 0.5rem;
+        font-family: $tipografia-text;
+    
+    }
+}
+
+
+
+
+
+

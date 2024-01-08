@@ -1,0 +1,104 @@
+.form__titulo{
+    @include titulo-principal
+}
+
+.comunicate{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+&__text{
+    background: $secondary-color;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    font-family: $tipografia-text;
+text-align: center;
+gap: 1rem;
+
+}
+
+&__iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+color: black;
+gap: 0.5rem;
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+i{
+    font-family: $tipografia-text;
+display: flex;
+gap: 0.5rem;
+
+}
+}
+}
+
+
+.form{
+    
+    background: $secondary-color;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    font-family: $tipografia-text;
+text-align: center;
+gap: 1rem; 
+padding: 1rem;
+
+&__input{
+    display: flex;
+    flex-direction: column;
+    font-family: $tipografia-text
+}
+
+&__espacio{
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+
+}
+
+&__asunto{
+    margin-top: 0.5rem;
+    font-family:$tipografia-text;
+    gap: 1rem;
+
+}
+
+&__texto{
+    margin-top: 0.2rem;
+border: none;
+border-radius: 15px 15px 15px 15px;
+
+}
+
+
+}
+
+.mapa{
+    border-top: 1px solid black;
+    &__google{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+
+    }
+    }
+
+
+
+
+
