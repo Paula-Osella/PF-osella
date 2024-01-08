@@ -169,7 +169,7 @@ img {
   padding: 1rem;
 }
 .presentacion img {
-width: 90vw;
+  width: 90vw;
 }
 .presentacion__texto {
   background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
@@ -195,7 +195,6 @@ width: 90vw;
     align-items: center;
   }
   .presentacion__texto {
-    background-color: aliceblue;
     color: black;
     text-align: center;
     width: 90vw;
@@ -207,22 +206,47 @@ width: 90vw;
     flex-direction: column;
     align-items: center;
   }
-
   .presentacion__texto {
     color: black;
     text-align: center;
     width: 70vw;
   }
-.presentacion img {
+  .presentacion img {
     width: 75vw;
     flex-direction: column;
     align-self: center;
   }
 }
-
+@media (min-width: 790px) and (max-width: 1220px) {
+  .presentacion {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .presentacion img {
+    width: 50vw;
+  }
+  .presentacion__texto {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .presentacion__texto {
+    font-size: 1rem;
+    width: 40vw;
+  }
+  .presentacion img {
+    width: 40vw;
+  }
+}
 
 /* seccion de productos destacados */
-.titulo__productos-destacados {
+.productos__destacados {
   font-size: 1rem;
   padding: 1rem;
   text-align: center;
@@ -247,9 +271,8 @@ width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-gap: 1rem;
-  padding: 1rem;
   gap: 1rem;
+  padding: 1rem;
 }
 .capsulas__texto {
   font-size: 1rem;
@@ -264,12 +287,26 @@ gap: 1rem;
 .capsulas img {
   width: 55vw;
 }
+@media (min-width: 400px) and (max-width: 570px) {
+  .capsulas img {
+    width: 50vw;
+  }
+  .capsulas__texto {
+    width: 55vw;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .capsulas__texto h2 {
+    font-size: 1rem;
+  }
+}
 
 /* FORMULARIO DE NOVEDADES */
 .formulario {
   background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
   border-radius: 10px 10px 10px;
   padding: 0.8rem;
+  margin: 10px;
 }
 .formulario__titulo {
   font-size: 1rem;
@@ -308,6 +345,11 @@ gap: 1rem;
   align-items: center;
   margin: 0.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media (min-width: 400px) and (max-width: 570px) {
+  .productos img {
+    width: 45vw;
+  }
 }
 
 /*# PREGUNTAS FRECUENTES*/
@@ -360,7 +402,6 @@ gap: 1rem;
   padding: 0.5rem;
 }
 
-/* NOSOTROS */
 .nosotros__titulo {
   font-size: 1rem;
   padding: 1rem;
@@ -397,8 +438,6 @@ gap: 1rem;
   text-align: center;
 }
 
-/* CONTACTO */
-
 .form__titulo {
   font-size: 1rem;
   padding: 1rem;
@@ -408,11 +447,9 @@ gap: 1rem;
 }
 
 .comunicate {
-  border-top: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
   gap: 1rem;
 }
 .comunicate__text {
@@ -472,8 +509,6 @@ gap: 1rem;
   border: none;
   border-radius: 15px 15px 15px 15px;
 }
-
-
 
 .mapa {
   border-top: 1px solid black;

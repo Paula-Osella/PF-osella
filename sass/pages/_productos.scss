@@ -27,6 +27,26 @@
 img{
     width: 55vw;
 }
+
+@include MQ-mobile{
+    img{
+        
+            width: 50vw;
+    }
+    &__texto {
+        
+        width: 55vw;
+        font-size: 0.8rem;
+        text-align: center;
+
+        h2{
+            font-size: 1rem;
+        }
+    }
+
+
+
+}
 }
 
 /* FORMULARIO DE NOVEDADES */
@@ -36,6 +56,7 @@ img{
     background: $secondary-color;
     border-radius: 10px 10px 10px;
     padding: 0.8rem;
+    margin: 10px;
 
     &__titulo{
         font-size: 1rem;
@@ -81,6 +102,13 @@ img{
         font-family: $tipografia-text;
     
     }
+
+    @include MQ-mobile{
+        img{
+            width: 45vw;
+        }
+    }
+    
 }
 
 
