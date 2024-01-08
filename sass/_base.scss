@@ -25,7 +25,22 @@ $tipografia-text: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robo
 
 }
 
-/* MIXIN PARA BREACKPOINTS/MEDIAQUERIES:*/
+@mixin mobile{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem
+}
+/* MIXIN PARA BREACKPOINTS/MEDIAQUERIES:INDEX */
 
 
 @mixin MQ-mobile{
