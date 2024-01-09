@@ -3,6 +3,8 @@
 }
 
 
+
+
 .capsulas{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -36,14 +38,86 @@ img{
     &__texto {
         
         width: 55vw;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
 
         h2{
             font-size: 1rem;
         }
     }
+}
 
+@include MQ-tablet{
+    img{
+        width: 35vw;
+    }
+    &____texto{
+        width: 30vw;
+        border: none;
+        font-size: 1rem;
+        text-align: center;
+
+}
+
+&{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+
+}
+& :nth-child(3) {
+    grid-column: span 2;
+
+}
+}
+@include MQ-td{
+    img {
+        width: 20vw;
+
+    }
+    h2{
+        font-size: 1rem;
+    }
+    &__texto{
+        width: 25vw;
+        border: none;
+        font-size: 0.8rem;
+        text-align: center;
+
+
+    }
+
+    &{
+        
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+        
+    
+    }
+
+}
+@include MQ-dekstop{
+    img{
+        width: 15vw;
+
+    }
+    h2{
+        font-size: 0.8rem;
+    }
+    &__texto{
+        width: 20vw;
+        border: none;
+        font-size: 0.9rem;
+        text-align: center;
+}
+
+&{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+}
 
 
 }
@@ -58,8 +132,9 @@ img{
     padding: 0.8rem;
     margin: 10px;
 
+
     &__titulo{
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-family: $tipografia-text;
         text-align: center;
     }
@@ -70,14 +145,29 @@ img{
         gap: 0.8rem;
     
     }
+    @include MQ-tablet{
+        &{
+            width: 60vw;
+margin: auto;
+
+        }
+    }
+    @include MQ-td{
+        width: 45vw;
+        margin: auto;
+    }
+    @include MQ-dekstop{
+        width: 35vw;
+        margin: auto;
+    }
 }
 
 /* GALERIA DE PRODCUTOS */
 
 .productos{
-    border-top: solid black 1px;
-    margin-top: 10px;
 
+    margin-top: 10px;
+    border-top: solid black 1px;
     div{
         display: flex;
         flex-direction: column;
@@ -103,11 +193,71 @@ img{
     
     }
 
-    @include MQ-mobile{
+    @include MQ-mobile2{
         img{
-            width: 45vw;
+            width: 30vw;
         }
+
+        &__div{
+            
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: space-around;
+        align-items: center;
+
+        }
+        &__titulo{
+            font-size: 0.8rem;
+            width: 25vw;
+    
+        }
+    
     }
+
+    @include MQ-tablet{
+        img{
+            width: 25vw;
+        }
+        &__div{
+            display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        }
+        &__titulo{
+            font-size: 0.8rem;
+        }
+    
+    }
+
+    @include MQ-td{
+        img{
+            width: 20vw;
+        }
+        &__div{
+            display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+        }
+        &__titulo{
+            font-size: 0.8rem;
+        }
+    
+    }
+
+@include MQ-dekstop{
+img{
+        width: 15vw;
+    }
+
+&__div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+
+}
     
 }
 

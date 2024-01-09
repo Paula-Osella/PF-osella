@@ -1,6 +1,6 @@
 /* VARIABLES:*/
 /* MIXIN PARA ESTRUCTURAS:*/
-/* MIXIN PARA BREACKPOINTS/MEDIAQUERIES:INDEX */
+/* MIXIN PARA BREACKPOINTS/MEDIAQUERIES*/
 /* RESETEOS*/
 *,
 p {
@@ -293,11 +293,68 @@ img {
   }
   .capsulas__texto {
     width: 55vw;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
   }
   .capsulas__texto h2 {
     font-size: 1rem;
+  }
+}
+@media (min-width: 571px) and (max-width: 789px) {
+  .capsulas img {
+    width: 35vw;
+  }
+  .capsulas____texto {
+    width: 30vw;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .capsulas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .capsulas :nth-child(3) {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 790px) and (max-width: 1220px) {
+  .capsulas img {
+    width: 20vw;
+  }
+  .capsulas h2 {
+    font-size: 1rem;
+  }
+  .capsulas__texto {
+    width: 25vw;
+    border: none;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .capsulas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .capsulas img {
+    width: 15vw;
+  }
+  .capsulas h2 {
+    font-size: 0.8rem;
+  }
+  .capsulas__texto {
+    width: 20vw;
+    border: none;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .capsulas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
   }
 }
 
@@ -309,7 +366,7 @@ img {
   margin: 10px;
 }
 .formulario__titulo {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
 }
@@ -319,11 +376,29 @@ img {
   align-items: center;
   gap: 0.8rem;
 }
+@media (min-width: 571px) and (max-width: 789px) {
+  .formulario {
+    width: 60vw;
+    margin: auto;
+  }
+}
+@media (min-width: 790px) and (max-width: 1220px) {
+  .formulario {
+    width: 45vw;
+    margin: auto;
+  }
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .formulario {
+    width: 35vw;
+    margin: auto;
+  }
+}
 
 /* GALERIA DE PRODCUTOS */
 .productos {
-  border-top: solid black 1px;
   margin-top: 10px;
+  border-top: solid black 1px;
 }
 .productos div {
   display: flex;
@@ -346,9 +421,52 @@ img {
   margin: 0.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-@media (min-width: 400px) and (max-width: 570px) {
+@media (min-width: 500px) and (max-width: 600px) {
   .productos img {
-    width: 45vw;
+    width: 30vw;
+  }
+  .productos__div {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: space-around;
+    align-items: center;
+  }
+  .productos__titulo {
+    font-size: 0.8rem;
+    width: 25vw;
+  }
+}
+@media (min-width: 571px) and (max-width: 789px) {
+  .productos img {
+    width: 25vw;
+  }
+  .productos__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .productos__titulo {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 790px) and (max-width: 1220px) {
+  .productos img {
+    width: 20vw;
+  }
+  .productos__div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .productos__titulo {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .productos img {
+    width: 15vw;
+  }
+  .productos__div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -362,44 +480,107 @@ img {
 }
 
 .preguntas {
-  border-top: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
-}
-.preguntas__frecuentes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.preguntas__foto {
-  width: 55vw;
-  border-radius: 10px 10px 10px 10px;
-}
-.preguntas__texto {
   background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
-  border-radius: 10px 10px 10px 10px;
-  font-size: 0.8rem;
-  padding: 1rem;
-  margin: 0.5rem;
+  margin-bottom: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
 }
 .preguntas__titulo {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
   font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .preguntas__tarjetas {
+  width: 10vw;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 12vw;
-  height: 12vh;
   gap: 1rem;
-  margin-top: 0.5rem;
-  padding: 0.5rem;
+}
+@media (min-width: 571px) and (max-width: 789px) {
+  .preguntas {
+    width: 80vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+  }
+}
+.preguntas__tarjetas {
+  width: 6vw;
+}
+@media (min-width: 790px) and (max-width: 1220px) {
+  .preguntas {
+    width: 70vw;
+    font-size: 0.9rem;
+    margin: auto;
+  }
+  .preguntas__tarjetas {
+    width: 4vw;
+  }
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .preguntas {
+    width: 80vw;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+  }
+  .preguntas__titulo {
+    text-align: center;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .preguntas__tarjetas {
+    width: 2vw;
+    margin: 10px;
+  }
+}
+
+.preguntas__galeria {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media (min-width: 571px) and (max-width: 789px) {
+  .preguntas__galeria img {
+    border-radius: 10px 10px 10px 10px;
+  }
+  .preguntas__galeria {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 790px) and (max-width: 1220px) {
+  .preguntas__galeria img {
+    border-radius: 20px 20px 20px 20px;
+  }
+  .preguntas__galeria {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .preguntas__galeria img {
+    border-radius: 20px 20px 20px 20px;
+  }
+  .preguntas__galeria {
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .nosotros__titulo {
