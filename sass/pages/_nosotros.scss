@@ -13,8 +13,8 @@
     gap: 1rem;
 
     }
-    &__foto{
-        width: 55vw;
+    img{
+        width: 40vw;
     border-radius: 10px 10px 10px 10px;
 }
 &__texto{
@@ -26,6 +26,38 @@
         font-family: $tipografia-text;
     text-align: center;
     
+}
+
+@include MQ-tablet{
+    img{
+        width: 35vw;
+    }
+    &__texto{
+        width: 50vw;
+    }
+    &__imagenes{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+@include MQ-td{
+    img{
+        width: 25vw;
+    }
+    &__texto{
+        width: 45vw;
+    }
+}
+
+@include MQ-dekstop{
+    img{
+        width: 15vw;
+    }
+    &__texto{
+        width: 35vw;
+    }
 }
 
 }

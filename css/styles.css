@@ -130,6 +130,11 @@ img {
   font-size: 0.6rem;
 }
 
+.barra__navegacion li:hover {
+  color: rgb(227, 44, 218);
+  transition: 0.2s;
+}
+
 /* portada del index */
 .foto__portada {
   display: flex;
@@ -156,7 +161,7 @@ img {
     width: 25vw;
   }
 }
-@media (min-width: 1221px) and (max-width: 1608px) {
+@media (min-width: 1225px) and (max-width: 1600px) {
   .foto__portada img {
     width: 20vw;
   }
@@ -230,7 +235,7 @@ img {
     font-size: 0.8rem;
   }
 }
-@media (min-width: 1221px) and (max-width: 1608px) {
+@media (min-width: 1225px) and (max-width: 1600px) {
   .presentacion {
     display: flex;
     flex-direction: row;
@@ -338,7 +343,7 @@ img {
     grid-template-rows: 1fr;
   }
 }
-@media (min-width: 1221px) and (max-width: 1608px) {
+@media (min-width: 1225px) and (max-width: 1600px) {
   .capsulas img {
     width: 15vw;
   }
@@ -388,7 +393,7 @@ img {
     margin: auto;
   }
 }
-@media (min-width: 1221px) and (max-width: 1608px) {
+@media (min-width: 1225px) and (max-width: 1600px) {
   .formulario {
     width: 35vw;
     margin: auto;
@@ -460,7 +465,7 @@ img {
     font-size: 0.8rem;
   }
 }
-@media (min-width: 1221px) and (max-width: 1608px) {
+@media (min-width: 1225px) and (max-width: 1600px) {
   .productos img {
     width: 15vw;
   }
@@ -522,7 +527,7 @@ img {
     width: 4vw;
   }
 }
-@media (min-width: 1221px) and (max-width: 1608px) {
+@media (min-width: 1225px) and (max-width: 1600px) {
   .preguntas {
     width: 80vw;
     text-align: center;
@@ -571,7 +576,7 @@ img {
     justify-content: center;
   }
 }
-@media (min-width: 1221px) and (max-width: 1608px) {
+@media (min-width: 1225px) and (max-width: 1600px) {
   .preguntas__galeria img {
     border-radius: 20px 20px 20px 20px;
   }
@@ -605,8 +610,8 @@ img {
   align-items: center;
   gap: 1rem;
 }
-.nosotros__foto {
-  width: 55vw;
+.nosotros img {
+  width: 40vw;
   border-radius: 10px 10px 10px 10px;
 }
 .nosotros__texto {
@@ -617,6 +622,35 @@ img {
   margin: 0.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
+}
+@media (min-width: 571px) and (max-width: 789px) {
+  .nosotros img {
+    width: 35vw;
+  }
+  .nosotros__texto {
+    width: 50vw;
+  }
+  .nosotros__imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+@media (min-width: 790px) and (max-width: 1220px) {
+  .nosotros img {
+    width: 25vw;
+  }
+  .nosotros__texto {
+    width: 45vw;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1600px) {
+  .nosotros img {
+    width: 15vw;
+  }
+  .nosotros__texto {
+    width: 35vw;
+  }
 }
 
 .form__titulo {
@@ -701,6 +735,12 @@ img {
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .mapa__google {
+    width: 60vw;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
