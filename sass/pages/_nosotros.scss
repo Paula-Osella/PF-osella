@@ -2,61 +2,61 @@
     @include titulo-principal
 }
 
-.nosotros{
-    @include mobile;
+.foto__portada{
+    @include MQ-dekstop{
+        width: 50vw;
+        margin: auto;
+    }
+}
 
-    &__articulo{
-        
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+
+.nosotros__portada{
+    @include MQ-td{
+            width: 80vw;
+            margin-left: 10%;
 
     }
-    img{
-        width: 40vw;
-    border-radius: 10px 10px 10px 10px;
+    @include MQ-dekstop{
+        &{
+            width: 50vw;
+            margin-left: 25%;
+            
+        }
+    }
 }
+
+.carrusel__nosotros{
+    margin-bottom: 20px;
+
+}
+.nosotros{
+    @include mobile;
+    margin-top: 20px;
+
+
 &__texto{
+    width: 60vw;
         background: $secondary-color;
-        border-radius: 10px 10px 10px 10px;
+        border-radius: 5px 5px 5px 5px;
         font-size: 1rem;
         padding: 0.8rem;
         margin: 0.5rem;
         font-family: $tipografia-text;
     text-align: center;
-    
-}
+    @include MQ-dekstop{
 
-@include MQ-tablet{
-    img{
-        width: 35vw;
-    }
-    &__texto{
-        width: 50vw;
-    }
-    &__imagenes{
-        
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
-}
-@include MQ-td{
-    img{
-        width: 25vw;
-    }
-    &__texto{
-        width: 45vw;
+        &{
+            width: 30vw;
+            border-radius: 30px 30px 30px 30px;
+        }
     }
 }
 
 @include MQ-dekstop{
-    img{
-        width: 15vw;
-    }
-    &__texto{
-        width: 35vw;
+    &{
+        display: grid;
+grid-template-columns: repeat(2, 1fr 1fr);
+grid-template-rows: 2;
     }
 }
 

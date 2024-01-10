@@ -161,7 +161,7 @@ img {
     width: 25vw;
   }
 }
-@media (min-width: 1225px) and (max-width: 1600px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .foto__portada img {
     width: 20vw;
   }
@@ -235,7 +235,7 @@ img {
     font-size: 0.8rem;
   }
 }
-@media (min-width: 1225px) and (max-width: 1600px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .presentacion {
     display: flex;
     flex-direction: row;
@@ -343,7 +343,7 @@ img {
     grid-template-rows: 1fr;
   }
 }
-@media (min-width: 1225px) and (max-width: 1600px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .capsulas img {
     width: 15vw;
   }
@@ -393,7 +393,7 @@ img {
     margin: auto;
   }
 }
-@media (min-width: 1225px) and (max-width: 1600px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .formulario {
     width: 35vw;
     margin: auto;
@@ -465,7 +465,7 @@ img {
     font-size: 0.8rem;
   }
 }
-@media (min-width: 1225px) and (max-width: 1600px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .productos img {
     width: 15vw;
   }
@@ -527,7 +527,7 @@ img {
     width: 4vw;
   }
 }
-@media (min-width: 1225px) and (max-width: 1600px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .preguntas {
     width: 80vw;
     text-align: center;
@@ -576,7 +576,7 @@ img {
     justify-content: center;
   }
 }
-@media (min-width: 1225px) and (max-width: 1600px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .preguntas__galeria img {
     border-radius: 20px 20px 20px 20px;
   }
@@ -596,6 +596,30 @@ img {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .foto__portada {
+    width: 50vw;
+    margin: auto;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 1220px) {
+  .nosotros__portada {
+    width: 80vw;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .nosotros__portada {
+    width: 50vw;
+    margin-left: 25%;
+  }
+}
+
+.carrusel__nosotros {
+  margin-bottom: 20px;
+}
+
 .nosotros {
   border-top: 1px solid black;
   display: flex;
@@ -603,53 +627,29 @@ img {
   align-items: center;
   padding: 1rem;
   gap: 1rem;
-}
-.nosotros__articulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.nosotros img {
-  width: 40vw;
-  border-radius: 10px 10px 10px 10px;
+  margin-top: 20px;
 }
 .nosotros__texto {
+  width: 60vw;
   background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
   font-size: 1rem;
   padding: 0.8rem;
   margin: 0.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
 }
-@media (min-width: 571px) and (max-width: 789px) {
-  .nosotros img {
-    width: 35vw;
-  }
+@media (min-width: 1221px) and (max-width: 1608px) {
   .nosotros__texto {
-    width: 50vw;
+    width: 30vw;
+    border-radius: 30px 30px 30px 30px;
   }
-  .nosotros__imagenes {
+}
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .nosotros {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-  }
-}
-@media (min-width: 790px) and (max-width: 1220px) {
-  .nosotros img {
-    width: 25vw;
-  }
-  .nosotros__texto {
-    width: 45vw;
-  }
-}
-@media (min-width: 1225px) and (max-width: 1600px) {
-  .nosotros img {
-    width: 15vw;
-  }
-  .nosotros__texto {
-    width: 35vw;
+    grid-template-columns: repeat(2, 1fr 1fr);
+    grid-template-rows: 2;
   }
 }
 
@@ -677,6 +677,26 @@ img {
   text-align: center;
   gap: 1rem;
 }
+@media (min-width: 901px) and (max-width: 1224px) {
+  .comunicate__text {
+    width: 25vw;
+    min-height: 60vh;
+    background: none;
+    font-size: 1.2rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1608px) {
+  .comunicate__text {
+    width: 30vw;
+    background: none;
+    font-size: 1.2rem;
+    padding: 0rem;
+  }
+}
 .comunicate__iconos {
   display: flex;
   flex-direction: column;
@@ -692,6 +712,24 @@ img {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
   gap: 0.5rem;
+}
+@media (min-width: 901px) and (max-width: 1224px) {
+  .comunicate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1608px) {
+  .comunicate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
+    gap: 0.5rem;
+  }
 }
 
 .form {
@@ -714,6 +752,18 @@ img {
   border-radius: 10px 10px 10px 10px;
   border: none;
 }
+@media (min-width: 901px) and (max-width: 1224px) {
+  .form__espacio {
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1608px) {
+  .form__espacio {
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+  }
+}
 .form__asunto {
   margin-top: 0.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -723,6 +773,30 @@ img {
   margin-top: 0.2rem;
   border: none;
   border-radius: 15px 15px 15px 15px;
+}
+@media (min-width: 901px) and (max-width: 1224px) {
+  .form__texto {
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1608px) {
+  .form__texto {
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+  }
+}
+@media (min-width: 901px) and (max-width: 1224px) {
+  .form {
+    width: 30vw;
+    background: none;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1608px) {
+  .form {
+    width: 30vw;
+    background: none;
+  }
 }
 
 .mapa {
@@ -737,6 +811,21 @@ img {
   gap: 1rem;
 }
 @media (min-width: 601px) and (max-width: 900px) {
+  .mapa__google {
+    width: 60vw;
+    margin: auto;
+  }
+}
+@media (min-width: 901px) and (max-width: 1224px) {
+  .mapa {
+    margin-top: 16px;
+  }
+  .mapa__google {
+    width: 70vw;
+    margin: auto;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1608px) {
   .mapa__google {
     width: 60vw;
     margin: auto;

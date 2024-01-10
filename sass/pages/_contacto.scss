@@ -15,6 +15,34 @@
 text-align: center;
 gap: 1rem;
 
+@include MQ-td2{
+    &{
+        width: 25vw;
+        min-height: 60vh;
+        background: none;
+        font-size: 1.2rem;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+    }
+
+
+}
+
+@include MQ-dekstop2{
+    &{
+        width: 30vw;
+        background: none;
+        font-size: 1.2rem;
+        padding: 0rem;
+
+
+    }
+
+
+}
 }
 
 &__iconos{
@@ -36,6 +64,22 @@ gap: 0.5rem;
 
 }
 }
+@include MQ-td2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+background: $secondary-color;
+gap: 0.5rem;
+
+}
+@include MQ-dekstop2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+background: $secondary-color;
+gap: 0.5rem;
+}
 }
 
 
@@ -55,11 +99,23 @@ padding: 1rem;
     display: flex;
     flex-direction: column;
     font-family: $tipografia-text
+
+
 }
 
 &__espacio{
     border-radius: 10px 10px 10px 10px;
     border: none;
+    @include MQ-td2{
+        border-radius: 1px 1px 1px 1px;
+        width: 30vw;
+    }
+
+    @include MQ-dekstop2{
+        border-radius: 1px 1px 1px 1px;
+        width: 30vw;
+    }
+
 
 }
 
@@ -74,9 +130,30 @@ padding: 1rem;
     margin-top: 0.2rem;
 border: none;
 border-radius: 15px 15px 15px 15px;
+@include MQ-td2{
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
 
 }
+@include MQ-dekstop2{
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+}
+}
 
+@include MQ-td2{
+    &{
+        width: 30vw;
+        background: none;
+    }
+}
+
+@include MQ-dekstop2{
+    &{
+        width: 30vw;
+        background: none;
+    }
+}
 
 }
 
@@ -95,7 +172,22 @@ border-radius: 15px 15px 15px 15px;
         width: 60vw;
         margin: auto;
     }
-    
+
+}
+
+@include MQ-td2{
+    &{margin-top: 16px;
+    }
+&__google{
+    width: 70vw;
+    margin: auto;
+}
+}
+@include MQ-dekstop2{
+    &__google{
+        width: 60vw;
+    margin: auto;
+    }
 }
     }
 
