@@ -44,6 +44,12 @@
         background: $quinto-color;
         color: black;
     }
+    @include MQ-desktopxl{
+        &{
+            width: 10vw;
+            min-height: 9vh;
+        }
+    }
 }
 
 

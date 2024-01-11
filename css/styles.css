@@ -64,6 +64,12 @@ img {
   background: linear-gradient(rgba(255, 106, 165, 0.871), rgb(232, 134, 232));
   color: black;
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .formulario__boton {
+    width: 10vw;
+    min-height: 9vh;
+  }
+}
 
 /*  CONTACTO*/
 .form__botones {
@@ -166,6 +172,11 @@ img {
     width: 20vw;
   }
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .foto__portada img {
+    width: 17vw;
+  }
+}
 
 /* PRESENTACION  */
 .presentacion {
@@ -249,6 +260,20 @@ img {
     width: 40vw;
   }
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .presentacion__texto {
+    font-size: 1.1rem;
+    width: 35vw;
+  }
+  .presentacion img {
+    width: 35vw;
+  }
+}
 
 /* seccion de productos destacados */
 .productos__destacados {
@@ -258,6 +283,11 @@ img {
   background-color: aliceblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .productos__destacados {
+    font-size: 1.5rem;
+  }
+}
 
 .productos__titulo-principal {
   font-size: 1rem;
@@ -265,6 +295,11 @@ img {
   text-align: center;
   background-color: aliceblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .productos__titulo-principal {
+    font-size: 1.5rem;
+  }
 }
 
 .capsulas {
@@ -362,6 +397,25 @@ img {
     grid-template-rows: 2fr;
   }
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .capsulas img {
+    width: 15vw;
+  }
+  .capsulas h2 {
+    font-size: 1rem;
+  }
+  .capsulas__texto {
+    width: 20vw;
+    border: none;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .capsulas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+  }
+}
 
 /* FORMULARIO DE NOVEDADES */
 .formulario {
@@ -397,6 +451,15 @@ img {
   .formulario {
     width: 35vw;
     margin: auto;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .formulario {
+    width: 35vw;
+    margin: auto;
+  }
+  .formulario__titulo {
+    font-size: 1.5rem;
   }
 }
 
@@ -474,6 +537,18 @@ img {
     grid-template-columns: repeat(5, 1fr);
   }
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .productos img {
+    width: 12vw;
+  }
+  .productos__div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .productos__titulo {
+    font-size: 1.1rem;
+  }
+}
 
 /*# PREGUNTAS FRECUENTES*/
 .preguntas__frecuentes-titulo {
@@ -482,6 +557,11 @@ img {
   text-align: center;
   background-color: aliceblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .preguntas__frecuentes-titulo {
+    font-size: 1.5rem;
+  }
 }
 
 .preguntas {
@@ -546,6 +626,25 @@ img {
     margin: 10px;
   }
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .preguntas {
+    width: 80vw;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+  }
+  .preguntas__titulo {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .preguntas__tarjetas {
+    width: 2vw;
+    margin: 10px;
+  }
+}
 
 .preguntas__galeria {
   width: 50vw;
@@ -577,6 +676,17 @@ img {
   }
 }
 @media (min-width: 1221px) and (max-width: 1608px) {
+  .preguntas__galeria img {
+    border-radius: 20px 20px 20px 20px;
+  }
+  .preguntas__galeria {
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
   .preguntas__galeria img {
     border-radius: 20px 20px 20px 20px;
   }

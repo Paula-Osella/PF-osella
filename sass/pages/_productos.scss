@@ -1,5 +1,10 @@
 .productos__titulo-principal{
-    @include titulo-principal
+    @include titulo-principal;
+    @include MQ-desktopxl{
+        &{
+            font-size: 1.5rem;
+        }
+    }
 }
 
 
@@ -121,6 +126,28 @@ img{
 
 
 }
+@include MQ-desktopxl{
+    img{
+        width: 15vw;
+
+    }
+    h2{
+        font-size: 1rem;
+    }
+    &__texto{
+        width: 20vw;
+        border: none;
+        font-size: 1.1rem;
+        text-align: center;
+}
+
+&{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+}
+
+}
 }
 
 /* FORMULARIO DE NOVEDADES */
@@ -159,6 +186,15 @@ margin: auto;
     @include MQ-dekstop{
         width: 35vw;
         margin: auto;
+    }
+    @include MQ-desktopxl{
+        
+        width: 35vw;
+        margin: auto;
+&__titulo{
+    font-size: 1.5rem;
+}
+
     }
 }
 
@@ -258,7 +294,21 @@ img{
 
 
 }
-    
+@include MQ-desktopxl{
+    img{
+        width: 12vw;
+    }
+
+&__div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+&__titulo{
+    font-size: 1.1rem;
+}
+}
 }
 
 

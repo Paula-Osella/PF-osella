@@ -93,6 +93,12 @@ $tipografia-text: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robo
 }
 
 
+@mixin MQ-desktopxl{
+    @media (min-width: 1609px) and (max-width: 1920px){
+        @content;
+    }
+}
+
 
 
 /* RESETEOS*/

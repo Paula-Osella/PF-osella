@@ -1,8 +1,11 @@
 /*# PREGUNTAS FRECUENTES*/
 
 .preguntas__frecuentes-titulo {
-    @include titulo-principal
-}
+    @include titulo-principal;
+    @include MQ-desktopxl{
+        font-size: 1.5rem;
+    }
+   }
 
 .preguntas{
     background:$secondary-color;
@@ -73,6 +76,30 @@ width: 80vw;
     
         }
     }
+
+    @include MQ-desktopxl{
+        &{
+            width: 80vw;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    padding: 1rem;
+                    border-radius: 10px 10px 10px 10px;
+                    margin: auto;
+            
+                }
+                
+                    &__titulo{
+                        text-align: center;
+                        font-size: 1.1rem;
+                        font-family: $tipografia-text;
+                    }
+                    &__tarjetas{
+                        width: 2vw;
+                        margin: 10px;
+
+                
+                    }
+    }
 }
 
 .preguntas__galeria{
@@ -105,6 +132,18 @@ justify-content: center;
     }
 }
 @include MQ-dekstop{
+    img{
+        border-radius: 20px 20px 20px 20px;
+    }
+    &{
+        width: 15vw;
+display: flex;
+flex-direction: row;
+justify-content: center;
+    }
+}
+
+@include MQ-desktopxl{
     img{
         border-radius: 20px 20px 20px 20px;
     }
