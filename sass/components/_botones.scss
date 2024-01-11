@@ -64,6 +64,10 @@
     margin: 1rem;
     font-family: $tipografia-text;
 border-radius: 10px 10px 10px 10px;
+@include MQ-desktopxl{
+    width: 15vw;
+    min-height: 5vh;
+}
 }
 
 .form__checkbox{

@@ -82,6 +82,12 @@ img {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-radius: 10px 10px 10px 10px;
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .form__botones {
+    width: 15vw;
+    min-height: 5vh;
+  }
+}
 
 .form__checkbox {
   width: 100px;
@@ -705,6 +711,11 @@ img {
   background-color: aliceblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .nosotros__titulo {
+    font-size: 1.5rem;
+  }
+}
 
 @media (min-width: 1221px) and (max-width: 1608px) {
   .foto__portada {
@@ -723,6 +734,12 @@ img {
   .nosotros__portada {
     width: 50vw;
     margin-left: 25%;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .nosotros__portada {
+    width: 45vw;
+    margin-left: 27%;
   }
 }
 
@@ -755,7 +772,20 @@ img {
     border-radius: 30px 30px 30px 30px;
   }
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .nosotros__texto {
+    width: 30vw;
+    border-radius: 30px 30px 30px 30px;
+  }
+}
 @media (min-width: 1221px) and (max-width: 1608px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 1fr);
+    grid-template-rows: 2;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
   .nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr 1fr);
@@ -769,6 +799,11 @@ img {
   text-align: center;
   background-color: aliceblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .form__titulo {
+    font-size: 1.5rem;
+  }
 }
 
 .comunicate {
@@ -799,11 +834,19 @@ img {
     justify-content: end;
   }
 }
-@media (min-width: 1225px) and (max-width: 1608px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .comunicate__text {
     width: 30vw;
     background: none;
     font-size: 1.2rem;
+    padding: 0rem;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .comunicate__text {
+    width: 30vw;
+    background: none;
+    font-size: 1.4rem;
     padding: 0rem;
   }
 }
@@ -832,13 +875,18 @@ img {
     gap: 0.5rem;
   }
 }
-@media (min-width: 1225px) and (max-width: 1608px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
   .comunicate {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
     gap: 0.5rem;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .comunicate {
+    background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
   }
 }
 
@@ -858,6 +906,11 @@ img {
   flex-direction: column;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .form__input {
+    font-size: 1.3rem;
+  }
+}
 .form__espacio {
   border-radius: 10px 10px 10px 10px;
   border: none;
@@ -868,7 +921,13 @@ img {
     width: 30vw;
   }
 }
-@media (min-width: 1225px) and (max-width: 1608px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .form__espacio {
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
   .form__espacio {
     border-radius: 1px 1px 1px 1px;
     width: 30vw;
@@ -878,6 +937,11 @@ img {
   margin-top: 0.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   gap: 1rem;
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
+  .form__asunto {
+    font-size: 1.3rem;
+  }
 }
 .form__texto {
   margin-top: 0.2rem;
@@ -890,7 +954,13 @@ img {
     width: 30vw;
   }
 }
-@media (min-width: 1225px) and (max-width: 1608px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .form__texto {
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
   .form__texto {
     border-radius: 1px 1px 1px 1px;
     width: 30vw;
@@ -902,7 +972,13 @@ img {
     background: none;
   }
 }
-@media (min-width: 1225px) and (max-width: 1608px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .form {
+    width: 30vw;
+    background: none;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
   .form {
     width: 30vw;
     background: none;
@@ -935,7 +1011,13 @@ img {
     margin: auto;
   }
 }
-@media (min-width: 1225px) and (max-width: 1608px) {
+@media (min-width: 1221px) and (max-width: 1608px) {
+  .mapa__google {
+    width: 60vw;
+    margin: auto;
+  }
+}
+@media (min-width: 1609px) and (max-width: 1920px) {
   .mapa__google {
     width: 60vw;
     margin: auto;

@@ -1,5 +1,8 @@
 .form__titulo{
-    @include titulo-principal
+    @include titulo-principal;
+    @include MQ-desktopxl{
+        font-size: 1.5rem;
+    }
 }
 
 .comunicate{
@@ -43,6 +46,17 @@ gap: 1rem;
 
 
 }
+@include MQ-desktopxl{
+    &{
+        width: 30vw;
+        background: none;
+        font-size: 1.4rem;
+        padding: 0rem;
+
+
+    }
+}
+
 }
 
 &__iconos{
@@ -80,6 +94,9 @@ gap: 0.5rem;
 background: $secondary-color;
 gap: 0.5rem;
 }
+@include MQ-desktopxl{
+    background: $secondary-color;
+}
 }
 
 
@@ -98,7 +115,12 @@ padding: 1rem;
 &__input{
     display: flex;
     flex-direction: column;
-    font-family: $tipografia-text
+    font-family: $tipografia-text;
+    @include MQ-desktopxl{
+        &{
+            font-size: 1.3rem;
+        }
+    }
 
 
 }
@@ -116,6 +138,10 @@ padding: 1rem;
         width: 30vw;
     }
 
+    @include MQ-desktopxl{
+        border-radius: 1px 1px 1px 1px;
+        width: 30vw; 
+    }
 
 }
 
@@ -123,6 +149,9 @@ padding: 1rem;
     margin-top: 0.5rem;
     font-family:$tipografia-text;
     gap: 1rem;
+    @include MQ-desktopxl{
+        font-size: 1.3rem;
+    }
 
 }
 
@@ -139,6 +168,11 @@ border-radius: 15px 15px 15px 15px;
     border-radius: 1px 1px 1px 1px;
     width: 30vw;
 }
+@include MQ-desktopxl{
+    border-radius: 1px 1px 1px 1px;
+    width: 30vw;
+
+}
 }
 
 @include MQ-td2{
@@ -154,8 +188,15 @@ border-radius: 15px 15px 15px 15px;
         background: none;
     }
 }
-
+@include MQ-desktopxl{
+    &{
+        width: 30vw;
+        background: none;
+    }
 }
+}
+
+
 
 .mapa{
     border-top: 1px solid black;
@@ -184,6 +225,12 @@ border-radius: 15px 15px 15px 15px;
 }
 }
 @include MQ-dekstop2{
+    &__google{
+        width: 60vw;
+    margin: auto;
+    }
+}
+@include MQ-desktopxl{
     &__google{
         width: 60vw;
     margin: auto;
