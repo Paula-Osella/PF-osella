@@ -6,6 +6,7 @@
     }
 }
 
+
 .foto__portada{
     @include MQ-dekstop{
         width: 50vw;
@@ -14,6 +15,8 @@
 
 }
 
+
+/* SEGUNDA FOTO PORTDA DE LA SECCION*/
 
 .nosotros__portada{
     @include MQ-td{
@@ -34,6 +37,8 @@
     }
 }
 
+
+/* CARRUSEL*/
 .carrusel__nosotros{
     margin-bottom: 20px;
 
@@ -43,6 +48,7 @@
     margin-top: 20px;
 
 
+    /* TEXTO */
 &__texto{
     width: 60vw;
         background: $secondary-color;

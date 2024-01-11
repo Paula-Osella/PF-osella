@@ -5,6 +5,8 @@
     }
 }
 
+/* Texto principal de comunicate*/
+
 .comunicate{
     @include column;
 
@@ -99,6 +101,8 @@ gap: 0.5rem;
 }
 }
 
+
+/* formulario de consulta:*/
 
 .form{
     
@@ -196,7 +200,7 @@ border-radius: 15px 15px 15px 15px;
 }
 }
 
-
+/* Mapa:*/
 
 .mapa{
     border-top: 1px solid black;

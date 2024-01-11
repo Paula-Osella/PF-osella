@@ -308,6 +308,7 @@ img {
   }
 }
 
+/* SECCION CAPSULAS*/
 .capsulas {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -652,6 +653,7 @@ img {
   }
 }
 
+/* GALERIA DE FOTOS:*/
 .preguntas__galeria {
   width: 50vw;
   margin: auto;
@@ -724,6 +726,7 @@ img {
   }
 }
 
+/* SEGUNDA FOTO PORTDA DE LA SECCION*/
 @media (min-width: 790px) and (max-width: 1220px) {
   .nosotros__portada {
     width: 80vw;
@@ -743,6 +746,7 @@ img {
   }
 }
 
+/* CARRUSEL*/
 .carrusel__nosotros {
   margin-bottom: 20px;
 }
@@ -755,6 +759,7 @@ img {
   padding: 1rem;
   gap: 1rem;
   margin-top: 20px;
+  /* TEXTO */
 }
 .nosotros__texto {
   width: 60vw;
@@ -806,6 +811,7 @@ img {
   }
 }
 
+/* Texto principal de comunicate*/
 .comunicate {
   display: flex;
   flex-direction: column;
@@ -890,6 +896,7 @@ img {
   }
 }
 
+/* formulario de consulta:*/
 .form {
   background: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
   border-radius: 10px 10px 10px 10px;
@@ -985,6 +992,7 @@ img {
   }
 }
 
+/* Mapa:*/
 .mapa {
   border-top: 1px solid black;
 }
