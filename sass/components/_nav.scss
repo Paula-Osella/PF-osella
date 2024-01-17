@@ -1,7 +1,5 @@
-.barra__navegacion{
-    li:hover {
-        color: rgb(227, 44, 218);
-        transition: 0.2s;
-    }
-
+.nav-link:hover{
+    background: $quinto-color;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
