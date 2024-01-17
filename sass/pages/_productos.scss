@@ -24,8 +24,9 @@
     &__texto{
         font-size: 1rem;
         text-align: center;
-        font-family: $terceary-color;
-        background: $secondary-color;
+        color: white;
+        font-family: $tipografia-text;
+        background: $terceary-color;
         border-radius: 10px 10px 10px 10px;
         font-size: 0.8rem;
         padding: 1rem;
@@ -43,11 +44,11 @@ img{
     &__texto {
         
         width: 55vw;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: center;
 
         h2{
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -56,10 +57,10 @@ img{
     img{
         width: 35vw;
     }
-    &____texto{
+    &__texto{
         width: 30vw;
         border: none;
-        font-size: 1rem;
+font-size: 1rem;
         text-align: center;
 
 }
@@ -82,12 +83,12 @@ img{
 
     }
     h2{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     &__texto{
         width: 25vw;
         border: none;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         text-align: center;
 
 
@@ -114,7 +115,7 @@ img{
     &__texto{
         width: 20vw;
         border: none;
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center;
 }
 
@@ -154,16 +155,18 @@ img{
 
 
 .formulario {
-    background: $secondary-color;
+    background: $terceary-color;
     border-radius: 10px 10px 10px;
     padding: 0.8rem;
     margin: 10px;
 
 
+
     &__titulo{
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-family: $tipografia-text;
         text-align: center;
+        color: white;
     }
     &__subscripcion{
         display: flex;
@@ -171,6 +174,9 @@ img{
         align-items: center;
         gap: 0.8rem;
     
+    }
+    &__icono{
+        color: white;
     }
     @include MQ-tablet{
         &{

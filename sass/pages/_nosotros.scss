@@ -51,13 +51,14 @@
     /* TEXTO */
 &__texto{
     width: 60vw;
-        background: $secondary-color;
+        background: $terceary-color;
         border-radius: 5px 5px 5px 5px;
         font-size: 1rem;
         padding: 0.8rem;
         margin: 0.5rem;
         font-family: $tipografia-text;
     text-align: center;
+    color: white;
     @include MQ-dekstop{
 
         &{

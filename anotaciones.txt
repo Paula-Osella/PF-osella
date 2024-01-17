@@ -1,0 +1,22 @@
+anotaciones.txt
+GIT:
+
+*COMANDO : clear (limpia la terminal) 
+
+*COMANDO: git add .
+
+*COMANDO: git comit -m "modificaciones de index y se suman estilos"
+enter
+
+
+*COMANDO: git status (ver el estado del proyecto)
+enter 
+
+*COMANDO : git log --oneline tambien deja ver
+
+
+SEO
+<meta name="description" content="Ejemplo de Palabras Clave y Programación">
+
+SASS:
+sass --watch sass/main.scss  css/styles.css
