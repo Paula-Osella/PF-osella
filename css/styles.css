@@ -206,7 +206,6 @@ img {
     align-items: center;
   }
   .presentacion__texto {
-    color: black;
     text-align: center;
     width: 90vw;
   }
@@ -218,7 +217,6 @@ img {
     align-items: center;
   }
   .presentacion__texto {
-    color: black;
     text-align: center;
     width: 70vw;
   }
@@ -238,7 +236,7 @@ img {
     width: 50vw;
   }
   .presentacion__texto {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 1221px) and (max-width: 1608px) {
@@ -248,7 +246,6 @@ img {
     justify-content: space-around;
   }
   .presentacion__texto {
-    font-size: 1rem;
     width: 40vw;
   }
   .presentacion img {
@@ -262,7 +259,6 @@ img {
     justify-content: space-around;
   }
   .presentacion__texto {
-    font-size: 1.1rem;
     width: 35vw;
   }
   .presentacion img {
