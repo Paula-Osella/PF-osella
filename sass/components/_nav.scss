@@ -1,6 +1,22 @@
-.nav-link:hover{
-    background: $quinto-color;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+.nav-link{
+    color: black; // Color de texto base (dado que la navbar es bg-white de Bootstrap)
+    padding: 0.5rem 1rem; // Un padding estándar para enlaces de navegación
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; // Transiciones suaves
+
+    &:hover{
+        background: $quinto-color; // Manteniendo tu variable
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        color: black; // Asegurar que el texto sea legible en hover
+    }
 }
 
+// Si necesitas personalizar el fondo de la navbar de Bootstrap,
+// lo harías aquí, sobrescribiendo la clase de Bootstrap.
+// Ejemplo:
+// .navbar.bg-white {
+//     background-color: lighten($primary-color, 10%) !important; // Ejemplo: Usa tu color primary
+// }
+
+// Si el botón de búsqueda en la nav es el mismo .boton_nav,
+// ya estará estilizado por _botones.scss.

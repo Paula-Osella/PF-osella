@@ -1,31 +1,24 @@
-
 /* VARIABLES:*/
 
+// Manteniendo tus nombres de variables originales
 $primary-color: rgba(244, 171, 244, 0.249);
-
 $secondary-color: linear-gradient(rgba(56, 153, 238, 0.371), rgb(232, 134, 232));
-
 $terceary-color: linear-gradient(rgba(0, 0, 0, 0.997), rgb(75, 5, 75));
-
-$cuarto-color:linear-gradient(rgba(232, 1, 94, 0.897), rgb(232, 134, 232));
-
-$quinto-color:linear-gradient(rgba(255, 106, 165, 0.871), rgb(232, 134, 232));
+$cuarto-color: linear-gradient(rgba(232, 1, 94, 0.897), rgb(232, 134, 232));
+$quinto-color: linear-gradient(rgba(255, 106, 165, 0.871), rgb(232, 134, 232));
 
 $tipografia-text: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
-
-/* MIXIN PARA ESTRUCTURAS:*/
 @mixin titulo-principal{
     font-size: 1rem;
     padding: 1rem;
     text-align: center;
     background-color:$primary-color;
     font-family: $tipografia-text;
-
 }
 
-@mixin mobile{
+@mixin mobile { 
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -34,71 +27,68 @@ $tipografia-text: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robo
     gap: 1rem;
 }
 
-@mixin column{
+@mixin column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem
+    gap: 1rem;
 }
 
 
-/* MIXIN PARA BREACKPOINTS/MEDIAQUERIES*/
 
 
-@mixin MQ-mobile{
+@mixin MQ-mobile {
     @media (min-width: 400px) and (max-width: 570px){
         @content;
     }
 }
 
-@mixin MQ-mobile2{
+@mixin MQ-mobile2 {
     @media (min-width: 500px) and (max-width:600px) {
         @content;
     }
 }
 
-@mixin MQ-tablet{
+@mixin MQ-tablet {
     @media (min-width: 571px) and (max-width:789px){
         @content;
-
     }
 }
-@mixin MQ-tablet2{
+@mixin MQ-tablet2 {
     @media (min-width: 601px) and (max-width:900px) {
         @content;
     }
 }
 
-@mixin MQ-td{
+@mixin MQ-td {
     @media (min-width: 790px) and (max-width: 1220px){
         @content;
     }
 }
 
-@mixin MQ-td2{
+@mixin MQ-td2 {
     @media (min-width: 901px) and (max-width:1224px) {
         @content;
     }
 }
 
-@mixin MQ-dekstop2{
+@mixin MQ-dekstop2 { 
     @media (min-width: 1221px) and (max-width: 1608px){
         @content;
     }
 }
-@mixin MQ-dekstop{
+@mixin MQ-dekstop { 
     @media (min-width: 1221px) and (max-width: 1608px){
         @content;
     }
 }
 
 
-@mixin MQ-desktopxl{
+@mixin MQ-desktopxl {
     @media (min-width: 1609px) and (max-width: 1920px){
         @content;
     }
 }
-
 
 
 /* RESETEOS*/
@@ -107,8 +97,7 @@ p {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: $tipografia-text
-
+    font-family: $tipografia-text; 
 }
 
 
@@ -124,6 +113,3 @@ ol {
 img {
     max-width: 100%;
 }
-
-
-

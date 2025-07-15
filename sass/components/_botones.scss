@@ -1,74 +1,80 @@
-
 /* boton nav */
 .boton_nav{
     background: $cuarto-color;
     color: white;
-    border: none;
+    border: 1px solid transparent; 
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
 
     &:hover{
-        background:$quinto-color;
-    color: black;
-    border: 1px solid black;
-
+        background: $quinto-color; 
+        color: black;
+        border-color: black; 
     }
 }
 
-/* BOTON PRODUCTOS DESTACADO PAGINA INDEX */
+
 .boton__shop {
     background: $cuarto-color;
     border: black 1px solid;
     color: white;
-    margin: auto;
+
     width: 10rem;
-    margin: 1rem;
-    font-family: $tipografia-text;
-
-    &:hover{
-        background: $quinto-color;
-    color: black;
-    color: black;
-    border: solid black 1px;
-
-    }
-}
-/* BOTON FORMULARIO PRODUCTOS */
-
-.formulario__boton {
-    border-radius:10px 10px 10px 10px;
-    background: $cuarto-color;
-    color: white;
-    gap: 1rem;
-    padding: 0.2rem;
+    margin: 1rem; 
+    font-family: $tipografia-text; 
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
 
     &:hover{
         background: $quinto-color;
         color: black;
+
+        border: solid black 1px; 
     }
-    @include MQ-desktopxl{
-        &{
-            width: 10vw;
-            min-height: 9vh;
-        }
+}
+
+/* BOTON FORMULARIO PRODUCTOS */
+.formulario__boton {
+    border-radius:10px; 
+    background: $cuarto-color; 
+    color: white;
+    gap: 1rem; 
+    padding: 0.2rem;
+    border: 1px solid transparent; 
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    &:hover{
+        background: $quinto-color; 
+        color: black;
+        border-color: black; 
+    }
+    @include MQ-desktopxl{ 
+        width: 10vw;
+        min-height: 9vh;
     }
 }
 
 
-/*  CONTACTO*/
+
 .form__botones{
-    
-    background: $cuarto-color;
+    background: $cuarto-color; 
     border: black 1px solid;
     color: white;
-    margin: auto;
+    
     width: 10rem;
-    margin: 1rem;
-    font-family: $tipografia-text;
-border-radius: 10px 10px 10px 10px;
-@include MQ-desktopxl{
-    width: 15vw;
-    min-height: 5vh;
+    margin: 1rem; 
+    font-family: $tipografia-text; 
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+    @include MQ-desktopxl{ 
+        width: 15vw;
+        min-height: 5vh;
+    }
+    &:hover{
+        background: $quinto-color; 
+        color: black;
+        border-color: black;
+    }
 }
-}
+
 
 .form__checkbox{
     width: 100px;
@@ -76,15 +82,12 @@ border-radius: 10px 10px 10px 10px;
 }
 
 .form__selector{
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px; 
     width: 150px;
 }
 
 .form__input{
     display: flex;
     flex-direction: column;
-    font-family: $tipografia-text;
-
+    font-family: $tipografia-text; 
 }
-
-

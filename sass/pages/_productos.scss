@@ -1,324 +1,297 @@
-.productos__titulo-principal{
+.productos__titulo-principal {
     @include titulo-principal;
-    @include MQ-desktopxl{
-        &{
+    @include MQ-desktopxl {
+        font-size: 1.5rem;
+    }
+}
+
+/* SECCION CAPSULAS*/
+.capsulas {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+
+
+    article {
+        @include column;
+        padding: 1rem;
+    }
+
+    &__texto {
+        font-size: 1rem; 
+        text-align: center;
+        color: white;
+        font-family: $tipografia-text;
+        background: $terceary-color;
+        border-radius: 10px; 
+    
+        padding: 1rem;
+        margin: 0.5rem;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+    img {
+        width: 55vw;
+    }
+
+    @include MQ-mobile {
+        img {
+            width: 50vw;
+        }
+        &__texto {
+            width: 55vw;
+            font-size: 1.1rem;
+            text-align: center;
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    @include MQ-tablet {
+        img {
+            width: 35vw;
+        }
+        &__texto {
+            width: 30vw;
+            border: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        & {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+        & :nth-child(3) { 
+            grid-column: span 2;
+        }
+    }
+
+    @include MQ-td {
+        img {
+            width: 20vw;
+        }
+        h2 {
+            font-size: 1.1rem;
+        }
+        &__texto {
+            width: 25vw;
+            border: none;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        & {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+
+    @include MQ-dekstop {
+        img {
+            width: 15vw;
+        }
+        h2 {
+            font-size: 0.8rem;
+        }
+        &__texto {
+            width: 20vw;
+            border: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        & {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 2fr;
+        }
+    }
+
+    @include MQ-desktopxl {
+        img {
+            width: 15vw;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+        &__texto {
+            width: 20vw;
+            border: none;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        & {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 2fr;
+        }
+    }
+}
+
+/* FORMULARIO DE NOVEDADES */
+.formulario {
+    background: $terceary-color;
+    border-radius: 10px; 
+    padding: 0.8rem;
+    margin: 10px;
+
+    &__titulo {
+        font-size: 1rem;
+        font-family: $tipografia-text;
+        text-align: center;
+        color: white;
+    }
+    &__subscripcion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    &__icono {
+        color: white;
+    }
+
+    @include MQ-tablet {
+        width: 60vw;
+        margin: auto; 
+    }
+    @include MQ-td {
+        width: 45vw;
+        margin: auto;
+    }
+    @include MQ-dekstop {
+        width: 35vw;
+        margin: auto;
+    }
+    @include MQ-desktopxl {
+        width: 35vw;
+        margin: auto;
+        &__titulo {
             font-size: 1.5rem;
         }
     }
 }
 
-/* SECCION CAPSULAS*/
 
-
-.capsulas{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-
-    article{
-@include column;
-        padding: 1rem;
-        
-    }
-
-    &__texto{
-        font-size: 1rem;
-        text-align: center;
-        color: white;
-        font-family: $tipografia-text;
-        background: $terceary-color;
-        border-radius: 10px 10px 10px 10px;
-        font-size: 0.8rem;
-        padding: 1rem;
-        margin: 0.5rem;
-    }
-img{
-    width: 55vw;
-}
-
-@include MQ-mobile{
-    img{
-        
-            width: 50vw;
-    }
-    &__texto {
-        
-        width: 55vw;
-        font-size: 1.1rem;
-        text-align: center;
-
-        h2{
-            font-size: 1.2rem;
-        }
-    }
-}
-
-@include MQ-tablet{
-    img{
-        width: 35vw;
-    }
-    &__texto{
-        width: 30vw;
-        border: none;
-font-size: 1rem;
-        text-align: center;
-
-}
-
-&{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-
-
-}
-& :nth-child(3) {
-    grid-column: span 2;
-
-}
-}
-@include MQ-td{
-    img {
-        width: 20vw;
-
-    }
-    h2{
-        font-size: 1.1rem;
-    }
-    &__texto{
-        width: 25vw;
-        border: none;
-        font-size: 1.1rem;
-        text-align: center;
-
-
-    }
-
-    &{
-        
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
-        
-    
-    }
-
-}
-@include MQ-dekstop{
-    img{
-        width: 15vw;
-
-    }
-    h2{
-        font-size: 0.8rem;
-    }
-    &__texto{
-        width: 20vw;
-        border: none;
-        font-size: 1rem;
-        text-align: center;
-}
-
-&{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr;
-}
-
-
-}
-@include MQ-desktopxl{
-    img{
-        width: 15vw;
-
-    }
-    h2{
-        font-size: 1rem;
-    }
-    &__texto{
-        width: 20vw;
-        border: none;
-        font-size: 1.1rem;
-        text-align: center;
-}
-
-&{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr;
-}
-
-}
-}
-
-/* FORMULARIO DE NOVEDADES */
-
-
-.formulario {
-    background: $terceary-color;
-    border-radius: 10px 10px 10px;
-    padding: 0.8rem;
-    margin: 10px;
-
-
-
-    &__titulo{
-        font-size: 1rem;
-        font-family: $tipografia-text;
-        text-align: center;
-        color: white;
-    }
-    &__subscripcion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-    
-    }
-    &__icono{
-        color: white;
-    }
-    @include MQ-tablet{
-        &{
-            width: 60vw;
-margin: auto;
-
-        }
-    }
-    @include MQ-td{
-        width: 45vw;
-        margin: auto;
-    }
-    @include MQ-dekstop{
-        width: 35vw;
-        margin: auto;
-    }
-    @include MQ-desktopxl{
-        
-        width: 35vw;
-        margin: auto;
-&__titulo{
-    font-size: 1.5rem;
-}
-
-    }
-}
-
-/* GALERIA DE PRODCUTOS */
-
-.productos{
-
+/* GALERIA DE PRODUCTOS */
+.productos {
     margin-top: 10px;
     border-top: solid black 1px;
-    div{
+
+    .productos__div {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+
+        @include MQ-mobile2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            justify-content: space-around;
+            align-items: center;
+
+            gap: 1rem; 
+        }
+
+        @include MQ-tablet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem; // Ajusta el gap
+        }
+
+        @include MQ-td {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem; 
+        }
+
+        @include MQ-dekstop {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2rem; 
+        }
+
+        @include MQ-desktopxl {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 2.5rem; 
+        }
+    }
+
+
+
+    .producto__card { 
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
         padding: 1rem;
-    
+        
+        border-radius: 10px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease; 
+
+        img {
+            width: 45vw;
+            max-width: 200px; 
+            height: auto;
+            object-fit: cover; 
+            border-radius: 5px;
+
+
+            @include MQ-mobile2 { width: 30vw; max-width: 180px; }
+            @include MQ-tablet { width: 25vw; max-width: 160px; }
+            @include MQ-td { width: 20vw; max-width: 150px; }
+            @include MQ-dekstop { width: 15vw; max-width: 140px; }
+            @include MQ-desktopxl { width: 12vw; max-width: 130px; }
+        }
+
+        .productos__titulo {
+            text-align: center;
+            font-size: 1rem;
+            border-radius: 10px; 
+            background: $terceary-color;
+            color: white;
+            padding: 0.5rem;
+ 
+            margin: 0.5rem;
+            font-family: $tipografia-text;
+
+ 
+            @include MQ-mobile2 {
+                font-size: 0.8rem;
+                width: 90%; 
+            }
+            @include MQ-tablet {
+                font-size: 0.8rem;
+                width: 90%;
+            }
+            @include MQ-td {
+                font-size: 0.8rem;
+                width: 90%;
+            }
+            @include MQ-dekstop {
+                font-size: 0.9rem;
+                width: 90%;
+            }
+            @include MQ-desktopxl {
+                font-size: 1.1rem;
+                width: 90%;
+            }
+        }
+
+
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+            transform: translateY(-5px); 
+        }
     }
-    img{
-        width: 45vw;
-    }
-
-    &__titulo{
-        text-align: center;
-        font-size: 1rem;
-    border-radius: 10px 10px 10px 10px;
-    background: $terceary-color;
-        color: white;
-        padding: 0.5rem;
-        align-items: center;
-        margin: 0.5rem;
-        font-family: $tipografia-text;
-    
-    }
-
-    @include MQ-mobile2{
-        img{
-            width: 30vw;
-        }
-
-        &__div{
-            
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
-        justify-content: space-around;
-        align-items: center;
-
-        }
-        &__titulo{
-            font-size: 0.8rem;
-            width: 25vw;
-    
-        }
-    
-    }
-
-    @include MQ-tablet{
-        img{
-            width: 25vw;
-        }
-        &__div{
-            display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        }
-        &__titulo{
-            font-size: 0.8rem;
-        }
-    
-    }
-
-    @include MQ-td{
-        img{
-            width: 20vw;
-        }
-        &__div{
-            display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-
-        }
-        &__titulo{
-            font-size: 0.8rem;
-        }
-    
-    }
-
-@include MQ-dekstop{
-img{
-        width: 15vw;
-    }
-
-&__div{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-
 }
-
-
-}
-@include MQ-desktopxl{
-    img{
-        width: 12vw;
-    }
-
-&__div{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-
-}
-
-&__titulo{
-    font-size: 1.1rem;
-}
-}
-}
-
-
-
-
-
-

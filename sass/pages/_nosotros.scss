@@ -1,92 +1,65 @@
-.nosotros__titulo{
-    @include titulo-principal;
-    @include MQ-desktopxl{
-        font-size: 1.5rem;
+.nosotros__titulo {
+  @include titulo-principal;
 
-    }
+  @include MQ-desktopxl {
+    font-size: 1.8rem;
+  }
 }
 
+/* Segunda imagen de portada */
+.nosotros__portada {
+  display: block;
+  margin: 2rem auto;
+  max-width: 90%;
+  border-radius: 12px;
 
-.foto__portada{
-    @include MQ-dekstop{
-        width: 50vw;
-        margin: auto;
-    }
+  @include MQ-dekstop {
+    max-width: 50vw;
+  }
 
+  @include MQ-desktopxl {
+    max-width: 45vw;
+  }
 }
 
-
-/* SEGUNDA FOTO PORTDA DE LA SECCION*/
-
-.nosotros__portada{
-    @include MQ-td{
-            width: 80vw;
-            margin-left: 10%;
-
-    }
-    @include MQ-dekstop{
-        &{
-            width: 50vw;
-            margin-left: 25%;
-            
-        }
-    }
-    @include MQ-desktopxl{
-        width: 45vw;
-        margin-left: 27%;
-    }
+/* Carrusel */
+.carrusel__nosotros {
+  margin: 2rem auto;
 }
 
+/* Sección Nosotros */
+.nosotros {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 
-/* CARRUSEL*/
-.carrusel__nosotros{
-    margin-bottom: 20px;
-
-}
-.nosotros{
-    @include mobile;
-    margin-top: 20px;
-
-
-    /* TEXTO */
-&__texto{
-    width: 60vw;
-        background: $terceary-color;
-        border-radius: 5px 5px 5px 5px;
-        font-size: 1rem;
-        padding: 0.8rem;
-        margin: 0.5rem;
-        font-family: $tipografia-text;
-    text-align: center;
+  &__texto {
+    width: 90%;
+    max-width: 800px;
+    background: $terceary-color;
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    font-family: $tipografia-text;
+    font-size: 1rem;
     color: white;
-    @include MQ-dekstop{
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 
-        &{
-            width: 30vw;
-            border-radius: 30px 30px 30px 30px;
-        }
-    }
-    @include MQ-desktopxl{
-        &{
-            width: 30vw;
-            border-radius: 30px 30px 30px 30px;
-        } 
+    &:hover {
+      transform: scale(1.02);
     }
 
-}
+    @include MQ-dekstop {
+      font-size: 1.1rem;
+      padding: 2rem;
+    }
 
-@include MQ-dekstop{
-    &{
-        display: grid;
-grid-template-columns: repeat(2, 1fr 1fr);
-grid-template-rows: 2;
+    @include MQ-desktopxl {
+      font-size: 1.2rem;
+      padding: 2rem 3rem;
     }
-}
-@include MQ-desktopxl{
-    &{
-        display: grid;
-grid-template-columns: repeat(2, 1fr 1fr);
-grid-template-rows: 2;
-    }
-}
+  }
 }
