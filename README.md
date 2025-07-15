@@ -19,10 +19,6 @@ Este es un proyecto de e-commerce desarrollado con **HTML, CSS y SASS** que simu
 * **SASS (SCSS):** Preprocesador CSS para una gestión de estilos más eficiente y modular.
 
 
-## 📸 Capturas de Pantalla (Opcional, pero muy recomendado)
-
-*(Si decides agregar capturas, sube las imágenes a una carpeta como `assets/images/` dentro de tu repositorio y enlaza aquí. Por ejemplo:)*
-
 ## 🚀 Cómo Ver el Proyecto
 
 ### 🌐 Proyecto Desplegado
