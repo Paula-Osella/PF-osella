@@ -17,11 +17,7 @@ Este es un proyecto de e-commerce desarrollado con **HTML, CSS y SASS** que simu
 * **HTML5:** Estructura semántica del contenido.
 * **CSS3:** Estilos y presentación visual.
 * **SASS (SCSS):** Preprocesador CSS para una gestión de estilos más eficiente y modular.
-    * *(Mencionar aquí si usaste alguna librería de iconos como Font Awesome, o algo de JavaScript si hay scripts para el menú o validación, etc. Por ejemplo: `JavaScript: Para interactividad en el menú y validación de formularios.`)*
 
-## 📸 Capturas de Pantalla (Opcional, pero muy recomendado)
-
-*(Si decides agregar capturas, sube las imágenes a una carpeta como `assets/images/` dentro de tu repositorio y enlaza aquí. Por ejemplo:)*
 
 ## 🚀 Cómo Ver el Proyecto
 
