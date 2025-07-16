@@ -1,251 +1,223 @@
-.form__titulo{
+.form__titulo {
     @include titulo-principal;
-    @include MQ-desktopxl{
+
+    @include MQ-desktopxl {
         font-size: 1.5rem;
     }
 }
 
-/* Texto principal de comunicate*/
-
-.comunicate{
+/* Sección principal de contacto */
+.comunicate {
     @include column;
 
-&__text{
-    background: $terceary-color;
-    border-radius: 10px 10px 10px 10px;
-    font-size: 1rem;
-    padding: 0.8rem;
-    margin: 0.5rem;
-    font-family: $tipografia-text;
-text-align: center;
-gap: 1rem;
-color: white;
 
-@include MQ-td2{
-    &{
-        width: 25vw;
-        min-height: 60vh;
-        background: none;
-        font-size: 1.2rem;
-        padding: 0rem;
+    &__text {
+        background: $terceary-color;
+        border-radius: 10px;
+        font-size: 1rem;
+        padding: 0.8rem;
+        margin: 0.5rem;
+        font-family: $tipografia-text;
+        text-align: center;
+        gap: 1rem;
+        color: white;
+
+        @include MQ-td2 {
+            width: 25vw;
+            min-height: 60vh;
+            background: none;
+            font-size: 1.2rem;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        @include MQ-dekstop2 {
+            width: 30vw;
+            background: none;
+            font-size: 1.2rem;
+            padding: 0;
+        }
+
+        @include MQ-desktopxl {
+            width: 30vw;
+            background: none;
+            font-size: 1.4rem;
+            padding: 0;
+        }
+    }
+
+    &__iconos {
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        align-items: center;
+        color: white;
+        gap: 0.5rem;
 
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        i {
+            font-family: $tipografia-text;
+            display: flex;
+            gap: 0.5rem;
+        }
     }
 
-
-}
-
-@include MQ-dekstop2{
-    &{
-        width: 30vw;
-        background: none;
-        font-size: 1.2rem;
-        padding: 0rem;
-
-
+    @include MQ-td2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $terceary-color;
+        gap: 0.5rem;
     }
 
+    @include MQ-dekstop2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $terceary-color;
+        gap: 0.5rem;
+    }
 
-}
-@include MQ-desktopxl{
-    &{
-        width: 30vw;
-        background: none;
-        font-size: 1.4rem;
-        padding: 0rem;
-
-
+    @include MQ-desktopxl {
+        background: $terceary-color;
     }
 }
 
-}
-
-&__iconos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-color: white;
-gap: 0.5rem;
-
-a{
-    text-decoration: none;
-    color: white;
-
-}
-i{
-    font-family: $tipografia-text;
-display: flex;
-gap: 0.5rem;
-
-}
-}
-@include MQ-td2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-background: $terceary-color;
-gap: 0.5rem;
-
-}
-@include MQ-dekstop2{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-background: $terceary-color;
-gap: 0.5rem;
-}
-@include MQ-desktopxl{
+/* Formulario */
+.form {
     background: $terceary-color;
-}
-}
-
-
-/* formulario de consulta:*/
-
-.form{
-    
-    background: $terceary-color;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     font-size: 1rem;
-    padding: 0.8rem;
+    padding: 1rem;
     margin: 0.5rem;
     font-family: $tipografia-text;
-text-align: center;
-gap: 1rem; 
-padding: 1rem;
-color: $terceary-color;
-color: white;
+    text-align: center;
+    gap: 1rem;
+    color: white;
 
-&__input{
-    display: flex;
-    flex-direction: column;
-    font-family: $tipografia-text;
-    @include MQ-desktopxl{
-        &{
+    &__input {
+        display: flex;
+        flex-direction: column;
+        font-family: $tipografia-text;
+
+        @include MQ-desktopxl {
             font-size: 1.3rem;
         }
     }
 
+    &__espacio {
+        border-radius: 10px;
+        border: none;
 
-}
+        @include MQ-td2 {
+            border-radius: 1px;
+            width: 30vw;
+        }
 
-&__espacio{
-    border-radius: 10px 10px 10px 10px;
-    border: none;
-    @include MQ-td2{
-        border-radius: 1px 1px 1px 1px;
+        @include MQ-dekstop2 {
+            border-radius: 1px;
+            width: 30vw;
+        }
+
+        @include MQ-desktopxl {
+            border-radius: 1px;
+            width: 30vw;
+        }
+    }
+
+    &__asunto {
+        margin-top: 0.5rem;
+        font-family: $tipografia-text;
+        gap: 1rem;
+
+        @include MQ-desktopxl {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__texto {
+        margin-top: 0.2rem;
+        border: none;
+        border-radius: 15px;
+
+        @include MQ-td2 {
+            border-radius: 1px;
+            width: 30vw;
+        }
+
+        @include MQ-dekstop2 {
+            border-radius: 1px;
+            width: 30vw;
+        }
+
+        @include MQ-desktopxl {
+            border-radius: 1px;
+            width: 30vw;
+        }
+    }
+
+    @include MQ-td2 {
         width: 30vw;
+        background: none;
     }
 
-    @include MQ-dekstop2{
-        border-radius: 1px 1px 1px 1px;
+    @include MQ-dekstop2 {
         width: 30vw;
+        background: none;
     }
 
-    @include MQ-desktopxl{
-        border-radius: 1px 1px 1px 1px;
-        width: 30vw; 
-    }
-
-}
-
-&__asunto{
-    margin-top: 0.5rem;
-    font-family:$tipografia-text;
-    gap: 1rem;
-    @include MQ-desktopxl{
-        font-size: 1.3rem;
-    }
-
-}
-
-&__texto{
-    margin-top: 0.2rem;
-border: none;
-border-radius: 15px 15px 15px 15px;
-@include MQ-td2{
-    border-radius: 1px 1px 1px 1px;
-    width: 30vw;
-
-}
-@include MQ-dekstop2{
-    border-radius: 1px 1px 1px 1px;
-    width: 30vw;
-}
-@include MQ-desktopxl{
-    border-radius: 1px 1px 1px 1px;
-    width: 30vw;
-
-}
-}
-
-@include MQ-td2{
-    &{
+    @include MQ-desktopxl {
         width: 30vw;
         background: none;
     }
 }
 
-@include MQ-dekstop2{
-    &{
-        width: 30vw;
-        background: none;
-    }
-}
-@include MQ-desktopxl{
-    &{
-        width: 30vw;
-        background: none;
-    }
-}
-}
-
-/* Mapa:*/
-
-.mapa{
+/* Mapa */
+.mapa {
     border-top: 1px solid black;
-    &__google{
+
+    &__google {
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1rem;
         gap: 1rem;
-    }
-@include MQ-tablet2{
-    &__google{
-        width: 60vw;
-        margin: auto;
+        border-radius: 10px;
     }
 
+    @include MQ-tablet2 {
+        &__google {
+            width: 60vw;
+            margin: auto;
+        }
+    }
+
+    @include MQ-td2 {
+        margin-top: 16px;
+
+        &__google {
+            width: 70vw;
+            margin: auto;
+        }
+    }
+
+    @include MQ-dekstop2 {
+        &__google {
+            width: 60vw;
+            margin: auto;
+        }
+    }
+
+    @include MQ-desktopxl {
+        &__google {
+            width: 60vw;
+            margin: auto;
+        }
+    }
 }
-
-@include MQ-td2{
-    &{margin-top: 16px;
-    }
-&__google{
-    width: 70vw;
-    margin: auto;
-}
-}
-@include MQ-dekstop2{
-    &__google{
-        width: 60vw;
-    margin: auto;
-    }
-}
-@include MQ-desktopxl{
-    &__google{
-        width: 60vw;
-    margin: auto;
-    }
-}
-    }
-
-
-
-
-
